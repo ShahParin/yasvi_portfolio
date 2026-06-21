@@ -34,4 +34,5 @@
   html{scroll-behavior:auto}
   .reveal{transition:none;opacity:1;transform:none}
   .btn:hover,.proj:hover{transform:none}
+  .status-dot{animation:none}
 }
