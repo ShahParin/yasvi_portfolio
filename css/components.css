@@ -1,0 +1,67 @@
+/* ============================================================
+   components.css — Reusable UI pieces
+   Navigation, buttons, pill tags, and cards.
+   ============================================================ */
+
+/* ---------------- NAVIGATION ---------------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:var(--ink-dark);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav-inner{
+  max-width:var(--maxw);margin:0 auto;padding:0 28px;
+  height:62px;display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:12px;color:#f6f3ec}
+.brand .mark{
+  width:34px;height:34px;border-radius:50%;
+  border:1.5px solid rgba(246,243,236,.55);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-weight:700;font-size:13px;
+  letter-spacing:-.5px;color:#f6f3ec;
+}
+.brand .name{font-family:'Playfair Display',serif;font-weight:700;font-size:20px;letter-spacing:.2px}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{
+  font-size:12.5px;font-weight:600;letter-spacing:1.4px;
+  color:rgba(246,243,236,.7);text-transform:uppercase;transition:color .2s;
+}
+.nav-links a:hover{color:#fff}
+
+/* Hamburger button (visible on mobile only — see responsive.css) */
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menu-btn span{display:block;width:22px;height:2px;background:#f6f3ec;margin:4px 0;transition:.25s}
+
+/* ---------------- BUTTONS ---------------- */
+.btn{
+  border-radius:40px;padding:15px 30px;font-size:14px;font-weight:600;
+  cursor:pointer;transition:transform .15s, box-shadow .2s, background .2s;
+  border:1px solid transparent;display:inline-flex;align-items:center;gap:9px;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:#f6f3ec;box-shadow:0 12px 24px -12px rgba(42,35,32,.5)}
+.btn-soft{background:var(--cream-2);color:var(--ink);border-color:var(--line)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:#cfc9bd}
+.btn-light{background:#f6f3ec;color:var(--ink)}
+.btn-outline{background:transparent;color:#f6f3ec;border-color:rgba(246,243,236,.35)}
+
+/* ---------------- PILL TAGS ---------------- */
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tag{
+  background:var(--pill);border:1px solid var(--pill-line);
+  border-radius:30px;padding:9px 18px;font-size:13px;font-weight:600;color:#4d473f;
+}
+.tag.solid{background:var(--ink);color:#f6f3ec;border-color:var(--ink)}
+
+/* ---------------- CARDS (education + certifications) ---------------- */
+.card{
+  background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--ink);
+  border-radius:16px;padding:26px 28px;margin-bottom:18px;
+  box-shadow:0 20px 44px -36px rgba(42,35,32,.4);
+}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.card h3{font-size:18px;font-weight:700}
+.card .org{font-size:13.5px;font-weight:600;margin-top:4px;font-style:italic;color:#5a544c}
+.card .when{font-size:12.5px;color:var(--muted);font-weight:700;letter-spacing:.3px;white-space:nowrap}
+.card .desc{font-size:14.5px;color:#4d473f;margin-top:12px}

@@ -1,0 +1,28 @@
+/* ============================================================
+   variables.css — Design tokens
+   Change colors, fonts, and layout widths here in ONE place.
+   ============================================================ */
+
+:root{
+  /* Backgrounds */
+  --cream:#faf8f2;        /* page background */
+  --cream-2:#f3f0e7;      /* alternating section background */
+  --paper:#fffefb;        /* cards */
+
+  /* Ink / dark surfaces */
+  --ink:#2a2320;          /* primary text + dark buttons */
+  --ink-dark:#241e1b;     /* nav, stats band, contact, footer */
+
+  /* Muted text */
+  --muted:#8b857c;
+  --muted-2:#b6b0a6;
+
+  /* Lines + pills */
+  --line:#e4dfd4;
+  --pill:#ece9e1;
+  --pill-line:#dcd7cb;
+
+  /* Layout */
+  --maxw:1180px;          /* max content width */
+  --r:18px;               /* default corner radius */
+}

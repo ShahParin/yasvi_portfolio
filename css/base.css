@@ -1,0 +1,35 @@
+/* ============================================================
+   base.css — Reset, base typography, layout helpers
+   ============================================================ */
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Use .serif on any element that should use the display serif font */
+.serif{font-family:'Playfair Display',Georgia,serif}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* Centered content container */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* Keeps anchor-jump targets clear of the sticky nav */
+section{scroll-margin-top:80px}
+
+/* ---- Scroll-reveal utility (toggled by js/main.js) ---- */
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+.reveal.in{opacity:1;transform:none}
