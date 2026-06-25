@@ -6,6 +6,7 @@
 /* Tablet: skills collapse to two columns */
 @media(max-width:900px){
   .skill-grid{grid-template-columns:1fr 1fr}
+  .proj-grid{grid-template-columns:1fr 1fr}
 }
 
 /* Mobile: hamburger menu + single-column grids */
@@ -33,6 +34,7 @@
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{transition:none;opacity:1;transform:none}
-  .btn:hover,.proj:hover{transform:none}
+  .btn:hover,.proj:hover,.skill-col:hover,.job:hover,
+  .card:hover{transform:none}
   .status-dot{animation:none}
 }
